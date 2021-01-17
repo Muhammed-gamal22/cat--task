@@ -1,0 +1,222 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        
+        body {
+            height: 1000px;
+        }
+        
+        .container {
+            width: 1170px;
+            margin: 0px auto;
+        }
+        
+        .content {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to right, #9c27b0, #8ecdff)
+        }
+        
+        .content nav {
+            background-color: #9c27b0;
+            width: 100%;
+            margin: 0px auto;
+            z-index: 4;
+            position: fixed;
+        }
+        
+        .content .nav-content {
+            align-items: center;
+            display: flex;
+        }
+        
+        .content nav .logo {
+            flex-basis: 20%;
+            margin: 0px auto;
+        }
+        
+        .logo img {
+            width: 150px;
+        }
+        
+        nav .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        
+        nav .nav-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .nav-links ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .menu {
+            display: none;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .menu::after {
+            content: '';
+            width: 0px;
+            position: absolute;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid #9c27b0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            right: 0px;
+            top: 20px;
+            display: none;
+        }
+        
+        .menu span {
+            display: block;
+            width: 20px;
+            margin-bottom: 3px;
+            height: 3px;
+            background-color: #fff;
+        }
+        
+        .menu-content {
+            width: 100%;
+            background-color: #9c27b0;
+            display: block;
+            height: 120px;
+            position: absolute;
+            top: 50px;
+            display: none;
+        }
+        
+        .menu-content .menu-links {
+            margin: 10px 0 10px 10px;
+        }
+        
+        .menu-links li {
+            padding: 4px 0px;
+        }
+        
+        .menu-links li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .information {
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: translateY(-50%);
+        }
+        
+        #circle {
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            transform: rotate(0deg);
+            transition: 0.1s;
+        }
+        
+        .information .feature img {
+            width: 64px;
+        }
+        
+        .information .feature {
+            position: absolute;
+            display: flex;
+        }
+        
+        .information .feature div {
+            margin-left: 30px;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .information .feature div h2 {
+            margin-top: 12px;
+        }
+        
+        .information .feature div p {
+            margin-top: 5px;
+        }
+        
+        .feature.one {
+            top: 450px;
+            right: 50px;
+        }
+        
+        .feature.two {
+            top: 150px;
+            left: 350px;
+            transform: rotate(-90deg);
+        }
+        
+        .feature.three {
+            bottom: 450px;
+            left: 50px;
+            transform: rotate(-180deg);
+        }
+        
+        .feature.four {
+            bottom: 150px;
+            right: 350px;
+            transform: rotate(-270deg);
+        }
+        
+        .mobile {
+            position: absolute;
+            top: 210px;
+            right: 350px;
+        }
+        
+        .mobile i {
+            font-size: 400px;
+            color: #fff;
+        }
+        
+        .mobile img {
+            width: 200px;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 35%;
+            right: 10%;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .controls i {
+            margin: 20px 0px;
+            color: #9c27b0;
+        }
+        
+        .overlay {
+            width: 0;
+            height: 0;
+            border-top: 500px solid #fff;
+            border-right: 500px solid #9c27b0;
+            border-bottom: 500px solid #fff;
+            border-left: 500px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
